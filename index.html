@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Атлант — фитнес-клуб: тренажёрный зал, кроссфит, бокс. Первая тренировка — 0 ₽</title>
+  <meta name="description" content="Фитнес-клуб «Атлант»: 1 200 м² залов, тренажёрная зона, кроссфит, бокс и растяжка. Первая тренировка бесплатно, абонементы от 2 900 ₽.">
+  <link rel="icon" href="assets/img/training.png" type="image/png">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="logo">АТЛАНТ<span>.</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#directions">Направления</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#team">Тренеры</a>
+        <a href="#plans">Тарифы</a>
+        <a href="#trial" class="btn btn--solid btn--nav">Пробная — 0 ₽</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Герой -->
+  <section class="hero" id="top">
+    <img class="hero__bg" src="assets/img/hero.png" alt="" aria-hidden="true">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="eyebrow">Фитнес-клуб · 1 200 м² · работает 24/7</p>
+      <h1>СИЛА НАЧИНАЕТСЯ<br>С <em>ПЕРВОГО</em> ШАГА</h1>
+      <p class="hero__sub">Тренажёрный зал, кроссфит, бокс и растяжка в пяти минутах от метро. Приходи на первую тренировку — бесплатно, с персональным разбором техники.</p>
+      <div class="hero__cta">
+        <a href="#trial" class="btn btn--solid">Первая тренировка — 0 ₽</a>
+        <a href="#plans" class="btn btn--ghost">Тарифы клуба</a>
+      </div>
+      <div class="hero__badges">
+        <div class="badge"><b>1 200 м²</b><span>залов и зон</span></div>
+        <div class="badge"><b>27</b><span>тренеров команды</span></div>
+        <div class="badge"><b>24/7</b><span>без выходных</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Акция с таймером -->
+  <section class="deal">
+    <div class="wrap deal__inner">
+      <div class="deal__text">
+        <p class="eyebrow eyebrow--lime">Акция месяца</p>
+        <h2>Первый месяц — <em>−50%</em></h2>
+        <p>на любой годовой абонемент. Успей до конца недели:</p>
+      </div>
+      <div class="deal__timer" id="timer" aria-label="До конца акции">
+        <div class="t"><b id="tDays">0</b><span>дней</span></div>
+        <div class="t"><b id="tHours">0</b><span>часов</span></div>
+        <div class="t"><b id="tMin">0</b><span>минут</span></div>
+        <div class="t"><b id="tSec">0</b><span>секунд</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Направления -->
+  <section class="section directions" id="directions">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Направления</p>
+        <h2>Выбери свою дисциплину</h2>
+      </div>
+      <div class="dir__grid">
+        <article class="dir reveal"><div class="dir__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12h3M19 12h3M7 8v8M17 8v8M7 12h10M5 9v6M19 9v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h3>Тренажёрный зал</h3><p>700 м² свободных весов: 40 станций, зона приседа и тяги, гантели до 50 кг.</p><span>включено в абонемент</span></article>
+        <article class="dir reveal"><div class="dir__icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h3>Кроссфит</h3><p>Функциональные WOD-тренировки малыми группами — до 8 человек.</p><span>от 350 ₽/занятие</span></article>
+        <article class="dir reveal"><div class="dir__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h13a3 3 0 1 1 0 6H9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 6v12M17 6v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h3>Бокс</h3><p>Ринг, мешки и лапы. Техника, ОФП и спарринги под контролем КМС.</p><span>от 400 ₽/занятие</span></article>
+        <article class="dir reveal"><div class="dir__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4c2.8 2.4 4 4.6 4 7a4 4 0 1 1-8 0c0-2.4 1.2-4.6 4-7Z" stroke="currentColor" stroke-width="1.7"/><path d="M6 20c2-1.4 4-2 6-2s4 .6 6 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h3>Йога</h3><p>Хатха и виньяса в зале с панорамным светом. Половики — наши.</p><span>от 300 ₽/занятие</span></article>
+        <article class="dir reveal"><div class="dir__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6c2.5 2 2.5 4 0 6s-2.5 4 0 6M10 6c2.5 2 2.5 4 0 6s-2.5 4 0 6M16 6c2.5 2 2.5 4 0 6s-2.5 4 0 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h3>Растяжка</h3><p>Шпагаты и мобильность с нуля — безопасно и по шагам.</p><span>от 300 ₽/занятие</span></article>
+        <article class="dir reveal"><div class="dir__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17c1.5 1.2 3 1.2 4.5 0s3-1.2 4.5 0 3 1.2 4.5 0 3-1.2 4.5 0M3 12c1.5 1.2 3 1.2 4.5 0s3-1.2 4.5 0 3 1.2 4.5 0 3-1.2 4.5 0M3 7c1.5 1.2 3 1.2 4.5 0S10.5 5.8 12 7s3 1.2 4.5 0 3-1.2 4.5 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h3>Кардио-зона</h3><p>Дорожки, эллипсы, гребля и велотренажёры с видом на вечерний город.</p><span>включено в абонемент</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Расписание -->
+  <section class="section section--tint schedule" id="schedule">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Расписание</p>
+        <h2>Групповые тренировки недели</h2>
+      </div>
+      <div class="tabs reveal">
+        <div class="tabs__nav" id="tabNav">
+          <button class="tab on" data-tab="mon">Пн</button>
+          <button class="tab" data-tab="wed">Ср</button>
+          <button class="tab" data-tab="fri">Пт</button>
+          <button class="tab" data-tab="sun">Вс</button>
+        </div>
+        <div class="tab-pane on" id="mon">
+          <div class="sc-row"><b>07:30</b><span>Кроссфит · WOD</span><i>Даниил К.</i><em>зал №2</em></div>
+          <div class="sc-row"><b>12:00</b><span>Хатха-йога</span><i>Мария Л.</i><em>светлый зал</em></div>
+          <div class="sc-row"><b>18:30</b><span>Бокс · техника</span><i>Артём В.</i><em>ринг</em></div>
+          <div class="sc-row"><b>20:00</b><span>Растяжка</span><i>Ева С.</i><em>светлый зал</em></div>
+        </div>
+        <div class="tab-pane" id="wed">
+          <div class="sc-row"><b>08:00</b><span>TRIM-круговая</span><i>Даниил К.</i><em>зал №2</em></div>
+          <div class="sc-row"><b>13:00</b><span>Виньяса-флоу</span><i>Мария Л.</i><em>светлый зал</em></div>
+          <div class="sc-row"><b>19:00</b><span>Кроссфит · endurance</span><i>Ольга Р.</i><em>зал №2</em></div>
+          <div class="sc-row"><b>20:30</b><span>Бокс · спарринги</span><i>Артём В.</i><em>ринг</em></div>
+        </div>
+        <div class="tab-pane" id="fri">
+          <div class="sc-row"><b>07:30</b><span>Кроссфит · strength</span><i>Даниил К.</i><em>зал №2</em></div>
+          <div class="sc-row"><b>12:30</b><span>Растяжка+мобилити</span><i>Ева С.</i><em>светлый зал</em></div>
+          <div class="sc-row"><b>18:30</b><span>Кроссфит · WOD</span><i>Ольга Р.</i><em>зал №2</em></div>
+          <div class="sc-row"><b>20:00</b><span>Хатха-йога</span><i>Мария Л.</i><em>светлый зал</em></div>
+        </div>
+        <div class="tab-pane" id="sun">
+          <div class="sc-row"><b>10:00</b><span>Открытая йога</span><i>Мария Л.</i><em>светлый зал</em></div>
+          <div class="sc-row"><b>12:00</b><span>Кроссфит · командный WOD</span><i>Ольга Р.</i><em>зал №2</em></div>
+          <div class="sc-row"><b>16:00</b><span>Бокс · новичкам</span><i>Артём В.</i><em>ринг</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Тренеры -->
+  <section class="section team" id="team">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Команда</p>
+        <h2>Тренеры, с которыми тянешь выше</h2>
+      </div>
+      <div class="team__grid">
+        <article class="coach reveal">
+          <div class="coach__photo"><img src="assets/img/training.png" alt="Тренер Даниил Ковалёв с гирей"></div>
+          <h3>Даниил Ковалёв</h3>
+          <p>кроссфит · КМС по тяжёлой атлетике</p>
+          <span>7 лет практики</span>
+        </article>
+        <article class="coach reveal">
+          <div class="coach__photo"><img src="assets/img/cardio.png" alt="Кардио-зона клуба Атлант"></div>
+          <h3>Ольга Руднева</h3>
+          <p>кроссфит · триатлон</p>
+          <span>9 лет практики</span>
+        </article>
+        <article class="coach reveal">
+          <div class="coach__initials" aria-hidden="true">АВ</div>
+          <h3>Артём Волков</h3>
+          <p>бокс · КМС, судья категории B</p>
+          <span>11 лет практики</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Тарифы -->
+  <section class="section section--tint plans" id="plans">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Тарифы</p>
+        <h2>Абонементы без мелкого шрифта</h2>
+      </div>
+      <div class="plans__grid">
+        <article class="plan reveal">
+          <h3>Старт</h3>
+          <p class="plan__sub">тренажёрный зал + кардио</p>
+          <div class="plan__price"><b>2 900 ₽</b><span>/ месяц</span></div>
+          <ul>
+            <li>Безлимит по залу, 8:00–22:00</li>
+            <li>Вводный инструктаж</li>
+            <li>Программа на первый месяц</li>
+          </ul>
+          <a href="#trial" class="btn btn--ghost">Начать</a>
+        </article>
+        <article class="plan plan--hot reveal">
+          <div class="plan__flag">Выбор клуба</div>
+          <h3>Атлант</h3>
+          <p class="plan__sub">зал + все групповые</p>
+          <div class="plan__price"><b>4 900 ₽</b><span>/ месяц</span></div>
+          <ul>
+            <li>Безлимит 24/7</li>
+            <li>Все групповые направления</li>
+            <li>Гостевой визит для друга — 2 в месяц</li>
+            <li>Заморозка — 14 дней</li>
+          </ul>
+          <a href="#trial" class="btn btn--solid">Начать</a>
+        </article>
+        <article class="plan reveal">
+          <h3>Про</h3>
+          <p class="plan__sub">с персональным тренером</p>
+          <div class="plan__price"><b>7 900 ₽</b><span>/ месяц</span></div>
+          <ul>
+            <li>Всё из тарифа «Атлант»</li>
+            <li>4 персональные тренировки</li>
+            <li>План питания и замеры раз в месяц</li>
+          </ul>
+          <a href="#trial" class="btn btn--ghost">Начать</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пробная -->
+  <section class="cta-band" id="trial">
+    <div class="wrap two-col cta-band__inner">
+      <div class="cta-band__text reveal">
+        <h2>Первая тренировка — 0 ₽</h2>
+        <p class="cta-band__sub">Оставь заявку — перезвоним за 15 минут, подберём направление и время. Форма и полотенце — за нами.</p>
+        <ul class="contacts__list contacts__list--light">
+          <li><b>Адрес</b><span>ул. Штангиста, 1 · 5 минут от метро</span></li>
+          <li><b>Режим</b><span>24/7 · администратор с 8:00 до 23:00</span></li>
+          <li><b>Телефон</b><span>+7 (900) 000-00-00</span></li>
+        </ul>
+      </div>
+      <form class="form reveal" id="bookForm" novalidate>
+        <div class="form__row">
+          <label>Имя<input type="text" name="name" placeholder="Как к тебе обращаться" required></label>
+          <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></label>
+        </div>
+        <div class="form__row">
+          <label>Направление<select name="dir"><option>Тренажёрный зал</option><option>Кроссфит</option><option>Бокс</option><option>Йога</option><option>Растяжка</option><option>Пока не знаю</option></select></label>
+          <label>Удобный день<input type="date" name="date"></label>
+        </div>
+        <button type="submit" class="btn btn--solid btn--wide">Записаться на пробную</button>
+        <p class="form__ok" id="formOk">Готово! Перезвоним в течение 15 минут 💪</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a href="#top" class="logo">АТЛАНТ<span>.</span></a>
+      <p class="footer__note">Фитнес-клуб · ул. Штангиста, 1 · 24/7</p>
+      <p class="footer__copy">© 2026 «Атлант». Демо-сайт для портфолио.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
