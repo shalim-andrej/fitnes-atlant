@@ -1,5 +1,12 @@
 # Атлант — сайт фитнес-клуба
 
+## Демо
+
+**[Открыть сайт →](https://shalim-andrej.github.io/fitnes-atlant/)**
+
+![Главный экран — десктоп](screenshots/desktop.png)
+![Мобильная версия](screenshots/mobile.png)
+
 Одностраничный сайт фитнес-клуба: тренажёрный зал, кроссфит, бокс. Центральная конверсия — лид-магнит «первая тренировка — 0 ₽» и форма записи на пробное занятие.
 
 **Демо:** [shalim-andrej.github.io/fitnes-atlant](https://shalim-andrej.github.io/fitnes-atlant/)
